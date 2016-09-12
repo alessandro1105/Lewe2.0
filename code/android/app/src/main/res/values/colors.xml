@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--THEME COLOR-->
+    <color name="colorPrimary">#41B1B6</color>
+    <color name="colorPrimaryDark">#239398</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--SPLASHSCREEN ACTIVITY-->
+    <color name="activity_splashscreen_background_color">#FFFFFF</color>
+
+    <!--SEARCH ACTIVITY-->
+    <color name="activity_search_title_text_color">#FFFFFF</color>
+    <color name="activity_search_description_text_color">#CBF6F7</color>
+    <color name="activity_search_button_text_color">#FFFFFF</color>
+
+    <!--MAIN ACTIVITY-->
+    <color name="activity_main_exitbutton_background_color">#00ffffff</color>
+    <color name="activity_main_bottombar_element_description_text_color">#777777</color>
+    <color name="activity_main_bottombar_element_description_text_color_selected">#65CCD1</color>
+
+    <!--FRAGMENT MAIN-->
+    <color name="fragment_main_background_color">#65CCD1</color>
+    <color name="fragment_main_data_text_color">#FFFFFF</color>
+    <color name="fragment_main_title_text_color">#FFFFFF</color>
+    <color name="fragment_main_timestamp_text_color">#CBF6F7</color>
+
+    <!-- CHART ACTIVITY -->
+    <color name="chart_tooltip_background_color">#F44E4E</color>
+    <color name="chart_tooltip_text_color">#FFFFFF</color>
+
+</resources>

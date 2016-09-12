@@ -1,0 +1,75 @@
+<resources>
+
+    <!--APP NAME-->
+    <string name="app_name">Lewe2.0</string>
+
+    <!--MENU-->
+    <string name="action_settings">Settings</string>
+    <string name="action_credits">Credits</string>
+    <string name="action_about">About</string>
+
+
+    <!--ACTIVITY NAME-->
+    <string name="title_activity_main">Lewe2.0</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_settings_band">Band</string>
+    <string name="title_activity_search" />
+    <string name="title_activity_temperature_chart">Temperature</string>
+    <string name="title_activity_gsr_chart">GSR</string>
+
+    <!--SETTINGS MAIN ACTIVITY-->
+    <string name="activity_settings_main_band_title">Band</string>
+    <string name="activity_settings_main_band_summary">Set up your LeweBand</string>
+    <string name="activity_settings_main_version_title">Version</string>
+    <string name="activity_settings_main_version_summary">2.00 build 16/05/2016 00:31</string>
+    <string name="activity_settings_main_author_title">Author</string>
+    <string name="activity_settings_main_author_summary">Alessandro Pasqualini</string>
+    <string name="activity_settings_main_exit_title">Exit</string>
+    <string name="activity_settings_main_exit_summary">Close the app and all the services</string>
+
+    <!--SETTINGS BAND ACTIVITY -->
+    <string name="activity_settings_band_status_title">Status</string>
+    <string name="activity_settings_band_firmware_title">Firmware</string>
+    <string name="activity_settings_band_firmware_summary">2.00 alfa build 15/05/2016 15:15</string>
+    <string name="activity_settings_band_search_title">Search LeweBand</string>
+    <string name="activity_settings_band_search_summary">Associate to another LeweBand</string>
+    <string name="activity_settings_band_dissociate_title">Dissociate LeweBand</string>
+    <string name="activity_settings_band_dissociate_summary">Dissociate LeweBand</string>
+    <string name="activity_settings_band_status_summary_disconnected">Disconnected</string>
+    <string name="activity_settings_band_status_summary_connected">Connected</string>
+    <string name="activity_settings_band_status_summary_connecting">Connecting</string>
+    <string name="activity_settings_band_name_title">LeweBand</string>
+    <string name="activity_settings_band_not_associated">Leweband not associated</string>
+    <string name="activity_settings_band_not_associated_toast">LeweBand successfully dissociated</string>
+
+
+    <!-- SEARCH ACTIVITY -->
+    <string name="activity_search_title">Searching for LeweBand…</string>
+    <string name="activity_search_description">keep you LeweBand near your smartphone</string>
+    <string name="activity_search_bt_not_enabled">Cannot search for LeweBand</string>
+    <string name="activity_search_button_text_continue"><u>Continue</u></string>
+    <string name="activity_search_button_text_retry">Retry</string>
+    <string name="activity_search_button_text_exit">Exit</string>
+
+    <!-- MAIN ACTIVITY -->
+    <string name="activity_main_bottom_bar_element_temperature">Temperature</string>
+    <string name="activity_main_bottom_bar_element_gsr">GSR</string>
+    <string name="activity_main_bottom_bar_element_settings">Settings</string>
+
+
+    <!-- FRAGMENT MAIN -->
+    <string name="fragment_main_data_default_text">NA</string>
+    <string name="fragment_main_timestamp_default_text"></string>
+
+    <!-- FRAGMENT MAIN TEMPERATURE -->
+    <string name="fragment_main_temperature_title">Temperature</string>
+
+    <!-- FRAGMENT MAIN GSR -->
+    <string name="fragment_main_gsr_title">GSR</string>
+
+    <!--MAIN SERVICE NOTIFICATION -->
+    <string name="service_main_notification_title_text">Lewe2.0</string>
+    <string name="service_main_notification_description_band_disconnected_text">LeweBand is disconneted</string>
+    <string name="service_main_notification_description_band_connected_text">LeweBand is conneted</string>
+
+</resources>

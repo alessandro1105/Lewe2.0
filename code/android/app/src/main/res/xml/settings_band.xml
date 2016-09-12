@@ -1,0 +1,32 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:title="@string/activity_settings_band_name_title"
+        android:key="band_name">
+    </Preference>
+
+    <Preference
+        android:title="@string/activity_settings_band_status_title"
+        android:summary="Disconnected"
+        android:key="status">
+    </Preference>
+
+    <Preference
+        android:title="@string/activity_settings_band_firmware_title"
+        android:summary="@string/activity_settings_band_firmware_summary">
+    </Preference>
+
+    <Preference
+        android:title="@string/activity_settings_band_dissociate_title"
+        android:summary="@string/activity_settings_band_dissociate_summary"
+        android:key="dissociate">
+    </Preference>
+
+    <Preference
+        android:title="@string/activity_settings_band_search_title"
+        android:summary="@string/activity_settings_band_search_summary">
+
+        <intent android:action="com.lewetechnologies.app.intent.activities.SearchActivity" />
+    </Preference>
+
+</PreferenceScreen>

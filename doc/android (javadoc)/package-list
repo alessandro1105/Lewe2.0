@@ -1,0 +1,8 @@
+com.lewetechnologies.app.activities
+com.lewetechnologies.app.configs
+com.lewetechnologies.app.database
+com.lewetechnologies.app.fragments
+com.lewetechnologies.app.jack
+com.lewetechnologies.app.logger
+com.lewetechnologies.app.services
+com.lewetechnologies.app.utils

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lewetechnologies.app">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- SPLASH SCREEN ACTIVITY -->
+        <activity android:name=".activities.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- MAIN ACTIVITY -->
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/title_activity_main"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- CREDITS ACTIVITY -->
+        <activity
+            android:name=".activities.CreditsActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".activities.MainActivity" />
+
+        <!-- ABOUT ACTIVITY -->
+        <activity
+            android:name=".activities.AboutActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="com.lewetechnologies.app.intent.activities.AboutActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- SETTINGS MAIN ACTIVITY -->
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.MainActivity" />
+
+        <!-- SETTINGS BAND ACTIVITY -->
+        <activity
+            android:name=".activities.BandSettingsActivity"
+            android:label="@string/title_activity_settings_band"
+            android:parentActivityName=".activities.SettingsActivity">
+            <intent-filter>
+                <action android:name="com.lewetechnologies.app.intent.activities.BandSettingsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- SEARCH ACTIVITY -->
+        <activity
+            android:name=".activities.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:parentActivityName=".activities.SettingsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.lewetechnologies.app.intent.activities.SearchActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- TEMPERATURE CHART ACTIVITY -->
+        <activity
+            android:name=".activities.TemperatureChartActivity"
+            android:label="@string/title_activity_temperature_chart"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="landscape"/>
+
+        <!-- GSR CHART ACTIVITY -->
+        <activity
+            android:name=".activities.GSRChartActivity"
+            android:label="@string/title_activity_gsr_chart"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="landscape"/>
+
+        <!-- MAIN SERVICE -->
+        <service
+            android:name=".services.MainService"
+            android:enabled="true"/>
+
+        <!-- BLUETOOTH SERIAL SERVICE -->
+        <service
+            android:name=".services.BluetoothSerialService"
+            android:enabled="true"/>
+
+        <!-- DATABASE SERVICE -->
+        <service
+            android:name=".services.DatabaseService"
+            android:enabled="true"/>
+
+    </application>
+
+    <!-- BT PERMISSION-->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"/>
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true"/> <!--REQUIRE BLE-->
+
+</manifest>

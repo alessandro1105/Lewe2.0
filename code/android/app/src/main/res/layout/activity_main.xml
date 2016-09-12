@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_exit"
+                android:layout_gravity="end"
+                android:background="@color/activity_main_exitbutton_background_color"
+                android:layout_marginEnd="@dimen/activity_main_exitbutton_margin_end"
+                android:id="@+id/exitButton"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_main_bottombar_height"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/main_bottom_toolbar_border">
+
+            <RelativeLayout
+                android:layout_width="@dimen/activity_main_bottombar_placeholder_width"
+                android:layout_weight="0.16"
+                android:layout_height="match_parent"/>
+
+            <RelativeLayout
+                android:id="@+id/bottombar_action_temperature"
+                android:layout_width="@dimen/activity_main_bottombar_element_width"
+                android:layout_weight="0.33"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_main_bottombar_element_margin_top">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/bottombar_icon_temperature"
+                        android:layout_width="@dimen/activity_main_bottombar_element_icon_width"
+                        android:layout_height="@dimen/activity_main_bottombar_element_icon_height"
+                        android:src="@drawable/ic_temperature"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:id="@+id/bottombar_text_temperature"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_main_bottom_bar_element_temperature"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/activity_main_bottombar_element_description_text_size"
+                        android:layout_marginTop="@dimen/activity_main_bottombar_element_description_margin_top"
+                        android:textColor="@color/activity_main_bottombar_element_description_text_color"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottombar_action_gsr"
+                android:layout_width="@dimen/activity_main_bottombar_element_width"
+                android:layout_weight="0.33"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_main_bottombar_element_margin_top">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/bottombar_icon_gsr"
+                        android:layout_width="@dimen/activity_main_bottombar_element_icon_width"
+                        android:layout_height="@dimen/activity_main_bottombar_element_icon_height"
+                        android:src="@drawable/ic_gsr"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:id="@+id/bottombar_text_gsr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_main_bottom_bar_element_gsr"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/activity_main_bottombar_element_description_text_size"
+                        android:layout_marginTop="@dimen/activity_main_bottombar_element_description_margin_top"
+                        android:textColor="@color/activity_main_bottombar_element_description_text_color"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottombar_action_settings"
+                android:layout_width="@dimen/activity_main_bottombar_element_width"
+                android:layout_weight="0.33"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_main_bottombar_element_margin_top">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/activity_main_bottombar_element_icon_width"
+                        android:layout_height="@dimen/activity_main_bottombar_element_icon_height"
+                        android:src="@drawable/ic_settings"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_main_bottom_bar_element_settings"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/activity_main_bottombar_element_description_text_size"
+                        android:layout_marginTop="@dimen/activity_main_bottombar_element_description_margin_top"
+                        android:textColor="@color/activity_main_bottombar_element_description_text_color"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="@dimen/activity_main_bottombar_placeholder_width"
+                android:layout_weight="0.16"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</android.support.design.widget.CoordinatorLayout>

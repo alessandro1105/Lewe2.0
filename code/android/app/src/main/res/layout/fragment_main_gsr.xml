@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity$TemperatureFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fragment_main_background_color">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="@dimen/fragment_main_circle_light_width"
+                android:layout_height="@dimen/fragment_main_circle_light_height"
+                android:background="@drawable/circle_light"
+                android:layout_centerInParent="true">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="@dimen/fragment_main_circle_bold_width"
+                android:layout_height="@dimen/fragment_main_circle_bold_height"
+                android:background="@drawable/circle_bold"
+                android:layout_centerInParent="true">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_main_data_default_text"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/fragment_main_data_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/fragment_main_data_text_color"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_main_gsr_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/fragment_main_title_margin_top"
+                android:textSize="@dimen/fragment_main_title_text_size"
+                android:textColor="@color/fragment_main_title_text_color" />
+
+            <TextView
+                android:id="@+id/timestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_main_timestamp_default_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/fragment_main_date_margin_top"
+                android:textSize="@dimen/fragment_main_date_text_size"
+                android:textColor="@color/fragment_main_timestamp_text_color" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chart_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

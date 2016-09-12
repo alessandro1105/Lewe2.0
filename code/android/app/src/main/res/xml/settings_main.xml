@@ -1,0 +1,28 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:title="@string/activity_settings_main_band_title"
+        android:summary="@string/activity_settings_main_band_summary">
+
+            <intent android:action="com.lewetechnologies.app.intent.activities.BandSettingsActivity" />
+    </Preference>
+
+    <Preference
+        android:title="@string/activity_settings_main_author_title"
+        android:summary="@string/activity_settings_main_author_summary">
+
+            <intent android:action="com.lewetechnologies.app.intent.activities.AboutActivity" />
+    </Preference>
+
+    <Preference
+        android:title="@string/activity_settings_main_version_title"
+        android:summary="@string/activity_settings_main_version_summary">
+    </Preference>
+
+    <Preference
+        android:title="@string/activity_settings_main_exit_title"
+        android:summary="@string/activity_settings_main_exit_summary"
+        android:key="exit">
+    </Preference>
+
+</PreferenceScreen>
