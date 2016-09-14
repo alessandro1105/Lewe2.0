@@ -11,8 +11,8 @@
 
 ### Librerie aggiuntive per Arduino IDE ###
 * [RTClib](https://www.futurashop.it/image/catalog/data/Download/RTClib.zip)
-* [ArduinoJson](https://www.futurashop.it/image/catalog/data/Download/RTClib.zip)
-* [Flash](https://github.com/johnmccombs/arduino-libraries/blob/master/Flash/Flash.h)
+* [ArduinoJson](https://github.com/bblanchon/ArduinoJson)
+* [Flash](https://github.com/johnmccombs/arduino-libraries/tree/master/Flash)
 * [HashMap](https://github.com/alessandro1105/HashMap_Arduino_Library)
 
 
